@@ -1,0 +1,29 @@
+{
+  "name": "knex-learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "knex migrate:latest && knex seed:run && nodemon ./src/app.js",
+    "start-dev": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladboudreaux/knex-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vladboudreaux/knex-learn/issues"
+  },
+  "homepage": "https://github.com/vladboudreaux/knex-learn#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "knex": "^3.2.10",
+    "pg": "^8.22.0"
+  }
+}
